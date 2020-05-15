@@ -1,0 +1,38 @@
+<div class="form-container">
+    <form #registerForm="ngForm" (submit)="registerCommand()">
+        <div class="field">
+            <div class="name">
+                Name
+            </div>
+            <div class="input">
+                <input type="text" name="name" [(ngModel)]="userDetails.name" placeholder="John Moviter"/>
+            </div>
+        </div>
+        <div class="field">
+            <div class="email">
+                Email
+            </div>
+            <div class="input">
+                <input type="text" name="email" [(ngModel)]="userDetails.email" placeholder="you@mail.com"/>
+            </div>
+        </div>
+        <div class="field">
+            <div class="password">
+                Password
+            </div>
+            <div class="input">
+                <input type="password" name="password" [(ngModel)]="userDetails.password" placeholder=""/>
+            </div>
+        </div>
+        <div class="field">
+            <div class="input">
+                <input type="checkbox" name="termsAndConditions"/>I accept the terms & conditions
+            </div>
+        </div>
+        <div class="field">
+            <div class="input">
+                <button name="termsAndConditions">Go</button>
+            </div>
+        </div>
+    </form>
+</div>
